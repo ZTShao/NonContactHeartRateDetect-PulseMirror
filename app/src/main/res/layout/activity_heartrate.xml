@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <ImageView
+        android:id="@+id/rateIcon"
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/back"
+        app:srcCompat="@drawable/display" />
+
+    <TextView
+        android:id="@+id/heartRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="38dp"
+        android:layout_toStartOf="@+id/rateIcon"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rateIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#555555"
+        android:text="再测一次" />
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">非接触心率检测App</string>
+    <string name="face_detect_text">开始心率检测</string>
+
+</resources>
