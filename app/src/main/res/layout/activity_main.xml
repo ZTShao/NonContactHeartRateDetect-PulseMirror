@@ -1,43 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#000"
+    >
 
-
-    <Button
-        android:id="@+id/face_detect"
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/camera_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="13dp"
-        android:text="@string/face_detect_text" />
+        android:layout_height="match_parent"/>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/face_detect"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="14dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
-        android:text="信息科学与工程学院   邵喆泰" />
-
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="12dp"
-        app:srcCompat="@drawable/backimage" />
-
-
-
-</RelativeLayout>
+</ConstraintLayout>

@@ -10,7 +10,8 @@
         android:label="PulseMirror"
         android:roundIcon="@mipmap/hearticon"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:screenOrientation="landscape"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name="com.yl.heartratedetectZTShao.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
